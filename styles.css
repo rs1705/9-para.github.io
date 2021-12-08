@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+html {
+  text-align: left;
+  font-family: "montserrat";
+  width: 80%;
+  margin: auto;
+  font-size: 80%;
+}
+
+body {
+  border: 2px solid purple;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+#container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.team {
+  border: 2px solid rgb(236, 234, 236);
+  border-radius: 5px;
+  background-color: rgb(241, 241, 255);
+  color: purple;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+h1 {
+  color: purple;
+  font-weight: 800;
+  position: relative;
+}
+
+
+label {
+  font-size: 15px;
+  color: black;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  margin-right:1px;
+  vertical-align: top;
+}
+
+input[type="radio"]:checked + label {
+  background-color: yellow;
+  color: black;
+  border-bottom: 3px dashed black;
+  font-weight: 900;
+  transition: 0.09s;
+}
+#extract{
+  margin-left: 20px;
+}
+#prdDiv,#cfgDiv,#dbDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.radioContainer{
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+
+textarea {
+  border-radius: 4px;
+  border: 2px solid  rgb(171, 170, 171);
+}
+
+
+.overlay{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    cursor:pointer;
+    color:black;
+}
+
+.overlay-tb{
+  font-size: 16px;
+  margin-top:100px;
+  background-color: rgba(255, 254, 254, 0.833);
+  border:none;
+  padding:10px;
+  overflow-y: auto;
+}
+
+
+
+.hidden{
+    display: none;
+    transition: 0.2s ease-in;
+}
+
+
+.closeBtn{
+    position: absolute;
+    font-size: 25px;
+    top:50px;
+    right:50px;
+    padding:10px;
+    width:55px;
+    color:white;
+
+    font-weight: 900;
+}
+.closeBtn:hover{
+    transition: 0.08s ease-in;
+    box-shadow: none;
+}
+
+select,button{
+    font-size:16px;
+    font-family: "montserrat";
+    padding: 5px;
+}
+
+
+select{
+  height: 37px;
+  border-radius: 3px;
+  border:2px solid purple;
+}
+button{
+    background-color: purple;
+    color: white;
+    border: 2px solid purple;
+    padding: 7px;
+    border-radius: 3px;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(154, 0, 154);
+    box-shadow: 2px 2px 3px #ccc
+}
+
+button:disabled{
+  border: 3px solid #bcbcbc;
+  background-color: #cccccc;
+  color: #666666;
+}
+button:disabled:hover{
+  cursor: not-allowed;
+}
+
+@media only screen and (min-width: 1000px) {
+  html {
+    width:50%
+  }
+}
